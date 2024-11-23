@@ -7,6 +7,16 @@
             body {
                 margin: 0;
                 background-color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                overflow: hidden;
+            }
+
+            canvas {
+                display: block;
+                background-color: black;
             }
         </style>
     </head>
@@ -18,9 +28,7 @@
         ></canvas>
         <script>
             var Module = {
-                canvas: (() => {
-                    return document.getElementById("canvas");
-                })(),
+                canvas: document.getElementById("canvas"),
             };
         </script>
         {{{ SCRIPT }}}
